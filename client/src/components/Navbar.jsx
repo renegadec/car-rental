@@ -17,7 +17,7 @@ const Navbar = ({setShowLogin}) => {
     })
     
   return (
-    <div 
+    <nav 
         className={`flex item-center justify-between px-6 md:px-16 lg:px-24 
         xl:px-32 py-4 text-gray-600 border-b border-borderColor relative transition-all
         ${location.pathname === '/' && 'bg-light'}`}
@@ -64,7 +64,7 @@ const Navbar = ({setShowLogin}) => {
         <button className='sm:hidden cursor-pointer' aria-label='menu' onClick={() => setOpen(!open)}>
             <img src={open ? assets.close_icon : assets.menu_icon} alt="menu icon" />
         </button>
-    </div>
+    </nav>
   )
 }
 
